@@ -1,0 +1,28 @@
+
+/* Write a code which gets a studen's score and evaluate that.*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Session3_Ex4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter the student's score (which is a number between 0 and 20):");
+            int stdScore = int.Parse(Console.ReadLine());
+            if (stdScore >= 0 && stdScore < 10) { Console.WriteLine("The student's score is E"); }
+            else if (stdScore >= 10 && stdScore < 12) { Console.WriteLine("The student's score is D"); }
+                 else if (stdScore >= 12 && stdScore < 14) { Console.WriteLine("The student's score is C"); }
+                      else if (stdScore >= 14 && stdScore < 16) { Console.WriteLine("The student's score is B"); }
+                           else { Console.WriteLine("The student's score is A"); }
+           
+
+            Console.ReadKey();
+        }
+    }
+}
